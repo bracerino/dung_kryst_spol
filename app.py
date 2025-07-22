@@ -58,7 +58,7 @@ ENEMIES_LIST = [
     {"name": "Twinster",
      "image": "images/twinster.png"},
     {"name": "Phase Phantom",
-     "image": "images/horror.png"}
+     "image": "images/phase_phantom.png"}
     
     
 ]
