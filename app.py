@@ -41,19 +41,140 @@ ENEMY_BASE_STATS = {
 }
 
 ENEMIES_LIST = [
-    {"name": "Goblin Grunt",
-     "image": "images/goblin.png"},
-    {"name": "Orc Bruiser",
-     "image": "images/orc.png"},
-    {"name": "Stone Golem",
+    {"name": "Dr. Amorpho",
+     "image": "images/dramorpho.png"},
+    {"name": "Entropy",
+     "image": "images/entropy.png"},
+    {"name": "Dislocator",
      "image": "images/golem.png"},
-    {"name": "Shadow Stalker",
+    {"name": "MisInfomorph",
      "image": "images/shadow.png"},
-    {"name": "Dungeon Troll",
+    {"name": "The Disorder",
      "image": "images/troll.png"},
-    {"name": "Arcane Horror",
+    {"name": "Vacancy Viper",
+     "image": "images/horror.png"},
+    {"name": "Glassy Ghoul",
+     "image": "images/horror.png"},
+    {"name": "Twinster",
+     "image": "images/horror.png"},
+    {"name": "Phase Phantom",
      "image": "images/horror.png"}
+    
+    
 ]
+
+ENEMY_SHOUTOUTS = {
+    "Dr. Amorpho": [
+        "Symmetry is so last century. Join the amorphous age!",
+        "Crystals? Please! I prefer the freedom of the amorphous.",
+        "Let’s smudge those pretty planes!",
+        "You can’t orient what has no order!",
+        "Who needs repeating units when you have imagination?",
+        "I’ll melt your monoclinic dreams!",
+        "Order is for cowards!",
+        "They called me ‘non-crystalline’ in school. Look at me now!",
+        "You can’t X-ray what won’t stay still"
+    ],
+    "Entropy": [
+        "Heat me up, and I’ll tear your crystals apart!",
+        "Order is an illusion... I am inevitable!",
+        "Why build structure when you can watch it crumble?",
+        "I don’t break rules, I dissolve them.",
+        "Temperature up—structure down!",
+        "Even your perfect lattice can't outrun me forever.",
+        "The universe favors me, not your little grids."
+    ],
+    "Dislocator": [
+        "Just one slip... and down it all goes!",
+        "Perfect lattice? Not on my watch.",
+        "I bend, twist, and tear from within!",
+        "Think you’ve got structure? Let’s test it!”",
+        "Oh no! Another slip plane? What a shame!",
+        "Stress me, and I move!",
+        "I’m the crack in your crystal’s smile",
+        "Grain boundaries love me.",
+        "I twist your lattice like a pretzel.",
+        "You’ll never strain me out!"
+        
+    ],
+    "MisInfomorph": [
+        "Is it hexagonal or hexed?",
+        "Oops! Did I mix up your axes again?",
+        "I love a confused crystallographer.",
+        "Every wrong answer feeds me!",
+        "Your confusion is crystal clear.",
+        "The more you guess, the stronger I get!"
+    ],
+    "The Disorder": [
+        "Symmetry is just a suggestion.",
+        "I whisper chaos into your unit cells.",
+        "Perfect order is a myth.",
+        "I turn patterns into noise.",
+        "I don’t break rules. I undo them.",
+        "Try centering this structure!",
+    ],
+    "Vacancy Viper": [
+        "Guess what’s gone? That atom. You’re welcome.",
+        "One gap, one glitch, one downfall.",
+        "I leave holes where atoms once dreamed.",
+        "You’ll never fill what I take!",
+        "Don’t worry—it was just one atom…",
+        "I slip in, pop one out, slither off.",
+        "Perfect occupancy? Not anymore!",
+        "Find me if you can—I’m just a... space.",
+    ],
+    "Glassy Ghoul": [
+        "No symmetry, no structure, no mercy.",
+        "I haunt your crystal dreams with curves!.",
+        "Forget periodicity—I live in chaos!",
+        "Try calculating my diffraction pattern!",
+        "I ooze where atoms used to align.",
+        "Crystalline? Not in this neighborhood.",
+        "Your ordered world ends with a shatter.",
+        "I’m glassy, ghastly, and glorious.",
+    ],
+    "Twinster": [
+        "Mirror, mirror, everywhere!",
+        "Am I the twin... or the original?",
+        "You’re not seeing double. You’re seeing me!",
+        "Planes reversed, minds confused.",
+        "Crack that symmetry—I dare you!",
+        "Two orientations? That’s my kind of mess!",
+        "My domains are tangled, like your thoughts.",
+        "Your structure just split in two... or did it",
+        "Twinning is my winning!"
+    ],
+    "Phase Phantom": [
+        "I switch states like socks!",
+        "Solid today, something else tomorrow!",
+        "Polymorph panic incoming!",
+        "What phase am I? Depends on the weather!",
+        "Stability is so overrated.",
+        "This unit cell? It’s already obsolete.",
+        "Metastable? Me? Always.",
+        "Temperature up... guess what I become!",
+    ]
+    
+}
+
+
+def get_enemy_shoutout(enemy_name):
+    import random
+    base_name = enemy_name.split(" (Lvl")[0]
+
+    if base_name in ENEMY_SHOUTOUTS:
+        return random.choice(ENEMY_SHOUTOUTS[base_name])
+    else:
+        default_shouts = [
+            "Prepare to face your doom! ⚔️",
+            "You cannot defeat me! 💪",
+            "Your knowledge is worthless here! 🧠",
+            "I will crush your spirit! 💀",
+            "This dungeon will be your tomb! 🏰"
+        ]
+        return random.choice(default_shouts)
+
+
 
 RPS_OPTIONS = ["Rock", "Paper", "Scissors"]
 RPS_EMOJIS = {"Rock": "🪨", "Paper": "📄", "Scissors": "✂️"}
@@ -523,9 +644,11 @@ def generate_problem():
     rand = random.random()
     if rand < 0.25:  # 25% math problems
         return generate_math_problem()
-    elif rand < 0.15:  # 25 rock paper scissors
+    elif rand < 0.50:  # 15% numerical questions
+        return generate_numerical_question()
+    elif rand < 0.75:  # 20% rock paper scissors
         return generate_rps_problem()
-    else:  # 60% multiple choice questions
+    else:  # 40% multiple choice questions
         return generate_multiple_choice_question()
 
 
@@ -702,9 +825,52 @@ def render_enemy_display():
     if not enemy:
         return
 
+
     img_col, stats_col = st.columns([1, 2])
 
+
     with img_col:
+        shoutout = get_enemy_shoutout(enemy['name'])
+
+        st.markdown(f"""
+                    <div style="
+                        position: relative;
+                        background: white;
+                        border: 3px solid #333;
+                        border-radius: 20px;
+                        padding: 15px 20px;
+                        margin: 0 auto 20px auto;
+                        max-width: 300px;
+                        font-size: 1.1rem;
+                        font-weight: bold;
+                        text-align: center;
+                        color: #333;
+                        box-shadow: 3px 3px 0px #666;
+                        transform: rotate(-2deg);
+                    ">
+                        "{shoutout}"
+                        <div style="
+                            position: absolute;
+                            bottom: -15px;
+                            left: 50px;
+                            width: 0;
+                            height: 0;
+                            border-left: 15px solid transparent;
+                            border-right: 15px solid transparent;
+                            border-top: 15px solid white;
+                        "></div>
+                        <div style="
+                            position: absolute;
+                            bottom: -18px;
+                            left: 47px;
+                            width: 0;
+                            height: 0;
+                            border-left: 18px solid transparent;
+                            border-right: 18px solid transparent;
+                            border-top: 18px solid #333;
+                        "></div>
+                    </div>
+                """, unsafe_allow_html=True)
         st.image(enemy["image_path"])
 
     with stats_col:
@@ -712,6 +878,7 @@ def render_enemy_display():
         st.write(f"**HP:**")
         st.progress(enemy['hp'] / enemy['max_hp'], text=f"{enemy['hp']}/{enemy['max_hp']}")
         st.info(f"⚔️ Attack: {enemy['attack']} | 🎯 Accuracy: {enemy['accuracy']}% | 💨 Speed: {enemy['speed']}")
+
 
 
 
@@ -1101,7 +1268,6 @@ def main():
                         handle_rps_turn("Scissors")
 
         with enemy_col:
-            st.divider()
             st.divider()
             render_enemy_display()
 
