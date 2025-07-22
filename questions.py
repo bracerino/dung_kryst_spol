@@ -1,4 +1,4 @@
-const QUESTION_TOPICS = {
+QUESTION_TOPICS = {
     "Krystalograficka_spolecnost": [
         {
             "question": "Kdy byla založena Mezinárodní krystalografická unie (IUCr)?",
