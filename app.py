@@ -406,7 +406,7 @@ from questions import *
 from numerical_questions import *
 
 
-BASE_ANSWER_TIME_LIMIT = 15.0
+BASE_ANSWER_TIME_LIMIT = 30.0
 
 
 def get_answer_time_limit():
