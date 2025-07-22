@@ -1,519 +1,744 @@
-QUESTION_TOPICS = {
-    "XRD": [
+const QUESTION_TOPICS = {
+    "Krystalograficka_spolecnost": [
         {
-            "question": "What does XRD stand for?",
-            "options": ["X-Ray Diffraction", "X-Ray Detection", "X-Ray Distribution", "X-Ray Development"],
+            "question": "Kdy byla založena Mezinárodní krystalografická unie (IUCr)?",
+            "options": ["1945", "1948", "1950", "1954"],
+            "correct": 1
+        },
+        {
+            "question": "Kolik zakládajících zemí bylo na prvním kongresu IUCr v Bostonu v roce 1948?",
+            "options": ["3", "4", "5", "6"],
+            "correct": 2
+        },
+        {
+            "question": "Které země byly spolu s Československem mezi zakládajícími členy IUCr?",
+            "options": ["USA, Velká Británie, Norsko, Kanada", "USA, Francie, Německo, Itálie", "Velká Británie, Francie, Švédsko, Dánsko", "USA, SSSR, Polsko, Maďarsko"],
             "correct": 0
         },
         {
-            "question": "Fully focusing monochromator crystal is named after:",
-            "options": ["Janner", "Johann", "Janssen", "Johansson"],
-            "correct": 3
+            "question": "Kdo zorganizoval první specializované krystalografické setkání v roce 1954?",
+            "options": ["Allan Línek", "Adéla Kochanovská", "Slavomil Ďurovič", "Jindřich Hašek"],
+            "correct": 1
         },
         {
-            "question": "What is Bragg's Law equation?",
-            "options": ["$nλ = 2d \\sin θ$", "$nλ = d \\sin θ$", "$λ = 2d \\sin θ$", "$n = 2dλ \\sin θ$"],
+            "question": "Jak se původně nazývala první krystalografická setkání v roce 1954?",
+            "options": ["Rozhovory o aktuálních otázkách strukturní analýzy", "Rozhovory o aktuálních otázkách studia jemné struktury materiálů ionizačním zářením", "Mezinárodní krystalografická konference", "Strukturální analýza materiálů"],
+            "correct": 1
+        },
+        {
+            "question": "Kdy byla Krystalografická společnost formálně schválena Ministerstvem vnitra?",
+            "options": ["6. února 1986", "6. února 1989", "6. února 1991", "6. února 1992"],
+            "correct": 2
+        },
+        {
+            "question": "Kdo je současným předsedou Krystalografické společnosti?",
+            "options": ["Radomír Kužel", "Jindřich Hašek", "Václav Valvoda", "Zbyněk Šourek"],
+            "correct": 1
+        },
+        {
+            "question": "Kdo je současným tajemníkem Krystalografické společnosti?",
+            "options": ["Jindřich Hašek", "Radomír Kužel", "Ivana Kutá Smatanová", "Zbyněk Šourek"],
+            "correct": 1
+        },
+        {
+            "question": "Kolik registrovaných členů má Krystalografická společnost?",
+            "options": ["250", "300", "350", "400"],
+            "correct": 2
+        },
+        {
+            "question": "Na kolik pracovišť se v posledních letech snížil počet z původních 74?",
+            "options": ["Cca 40", "Cca 50", "Cca 60", "Cca 70"],
+            "correct": 1
+        },
+        {
+            "question": "Kdy se poprvé objevil Bulletin Krystalografické společnosti?",
+            "options": ["1978", "1980", "1982", "1984"],
+            "correct": 1
+        },
+        {
+            "question": "Jak se dnes nazývá časopis společnosti?",
+            "options": ["Krystalografický bulletin", "Materials Structure", "Materials Structure in Chemistry, Biology, Physics and Technology", "Český krystalografický časopis"],
+            "correct": 2
+        },
+        {
+            "question": "Jaké je ISSN číslo pro tištěnou verzi Materials Structure?",
+            "options": ["1211-5894", "1805-4382", "1234-5678", "0567-8901"],
             "correct": 0
         },
         {
-            "question": "What type of materials can be analyzed using XRD?",
-            "options": ["Only metals", "Only ceramics", "Crystalline materials", "Only polymers"],
+            "question": "Kdo je šéfredaktorem Materials Structure od roku 1994?",
+            "options": ["Jindřich Hašek", "Radomír Kužel", "Václav Petříček", "Michal Dušek"],
+            "correct": 1
+        },
+        {
+            "question": "Kde se konalo první kolokvium v roce 1980?",
+            "options": ["Beskydy", "Lysolaje (Beskydy)", "Praha", "Brno"],
+            "correct": 1
+        },
+        {
+            "question": "Jak se dnes nazývají výroční konference?",
+            "options": ["Kolokvium + rok", "Struktura + rok", "Česká krystalografie + rok", "ECM-CZ + rok"],
+            "correct": 1
+        },
+        {
+            "question": "Kolik kolokvií bylo zorganizováno do roku 2016?",
+            "options": ["25", "28", "30", "32"],
             "correct": 2
         },
         {
-            "question": "What is the typical X-ray wavelength used in XRD?",
-            "options": ["0.5-2.5 Å", "5-10 nm", "100-500 nm", "1-5 μm"],
+            "question": "Kdo vytvořil logo Krystalografické společnosti?",
+            "options": ["R. Kužel", "L. Dobíášová", "Z. Zikmund", "T. Havlík"],
+            "correct": 2
+        },
+        {
+            "question": "Kdy se konal konkurs na logo?",
+            "options": ["Leden 1987", "Leden 1988", "Leden 1989", "Leden 1990"],
+            "correct": 1
+        },
+        {
+            "question": "Co zobrazuje logo společnosti?",
+            "options": ["Krystalovou strukturu", "Šestičetnou symetrii a difrakci paprsků X na rovinách krystalu", "Molekulární strukturu", "Laboratorní vybavení"],
+            "correct": 1
+        },
+        {
+            "question": "Z čeho je vyrobeno cechovní právo Krystalografické společnosti?",
+            "options": ["Krystal a kov", "Rentgenová lampa Chirana a čtyři monokrystaly minerálů", "Sklo a minerály", "Kov a keramika"],
+            "correct": 1
+        },
+        {
+            "question": "Které minerály jsou součástí cechovního práva?",
+            "options": ["Křemen, kalcit, pyrit, fluorit", "Křemen z Žulové ve Slezsku, amfibol z Valeče v Doupovských vrších, kalcit z rudných dolů a pyrit z dolů ve Vintířově", "Diamant, rubín, safír, smaragd", "Živec, slída, amfibol, olivín"],
+            "correct": 1
+        },
+        {
+            "question": "Kdo byl první osobou pasovanou na 'rytíře krystalografie'?",
+            "options": ["Jindřich Hašek", "Dagmar Krausová", "Radomír Kužel", "Václav Valvoda"],
+            "correct": 1
+        },
+        {
+            "question": "Jak často se pořádají studentské soutěže?",
+            "options": ["Každý rok", "Každé dva roky", "Každé tři roky", "Nepravidelně"],
+            "correct": 1
+        },
+        {
+            "question": "Do kolika kategorií jsou rozděleny současné studentské soutěže?",
+            "options": ["Jedna", "Dvě", "Tři", "Čtyři"],
+            "correct": 1
+        },
+        {
+            "question": "Jaké jsou dvě kategorie studentské soutěže?",
+            "options": ["Teorie a praxe", "Biokrystalografie a chemická krystalografie; Fyzika a materiálové vědy", "Organická a anorganická", "Experimentální a výpočetní"],
+            "correct": 1
+        },
+        {
+            "question": "Kdo byl oceněn cenou Félixe Levy-Bertauta od ECA?",
+            "options": ["Jan Dohnálek", "Lukáš Palatinus", "Gabriel Demo", "Václav Valeš"],
+            "correct": 1
+        },
+        {
+            "question": "Od kdy společnost spoluorganizuje Setkání strukturních biologů?",
+            "options": ["2000", "2002", "2004", "2006"],
+            "correct": 1
+        },
+        {
+            "question": "Kde se konají Setkání strukturních biologů?",
+            "options": ["Praha", "Brno", "Nové Hrady", "České Budějovice"],
+            "correct": 2
+        },
+        {
+            "question": "Jak se dnes anglicky nazývá konference strukturních biologů?",
+            "options": ["Czech Structural Biology Meeting", "Central European Structural Biology", "Discussions in Structural Molecular Biology", "International Structural Biology Conference"],
+            "correct": 2
+        },
+        {
+            "question": "Kdo je od počátku předsedou konference Discussions in Structural Molecular Biology?",
+            "options": ["Jindřich Hašek", "B. Schneider", "Jan Dohnálek", "Ivana Kutá Smatanová"],
+            "correct": 1
+        },
+        {
+            "question": "Kolik účastníků se zúčastnilo posledních Setkání strukturních biologů?",
+            "options": ["Přes 100", "Přes 120", "Přes 150", "Přes 200"],
+            "correct": 1
+        },
+        {
+            "question": "Od kdy se pořádají FEBS kurzy makromolekulární krystalizace?",
+            "options": ["2002", "2004", "2006", "2008"],
+            "correct": 1
+        },
+        {
+            "question": "Jaký je úplný název FEBS kurzů?",
+            "options": ["Pokročilé metody v makromolekulární krystalizaci", "Evropské krystalizační metody", "Techniky krystalizace proteinů", "Studie biologických makromolekul"],
             "correct": 0
         },
         {
-            "question": "What does the peak intensity in an XRD pattern relate to?",
-            "options": ["Crystal size", "Atomic number", "Structure factor", "Temperature"],
+            "question": "Kdo jsou hlavní organizátorky FEBS kurzů?",
+            "options": ["B. Schneider a J. Hašek", "Ivana Kutá Smatanová a Pavlína Řezáčová", "R. Kužel a M. Dušek", "V. Petříček a Z. Šourek"],
+            "correct": 1
+        },
+        {
+            "question": "Kolik FEBS kurzů krystalizace se konalo do roku 2016?",
+            "options": ["Pět", "Šest", "Sedm", "Osm"],
             "correct": 2
         },
         {
-            "question": "Which radiation is most commonly used in laboratory XRD instruments?",
-            "options": ["Cu Kα", "Fe Kα", "Mo Kα", "Cr Kα"],
+            "question": "Která byla největší mezinárodní konference pořádaná Krystalografickou společností?",
+            "options": ["EPDIC IX", "ECM-18", "Size-Strain IV", "XTOP"],
+            "correct": 1
+        },
+        {
+            "question": "Kdy se konala ECM-18 v Praze?",
+            "options": ["16.-20. srpna 1996", "16.-20. srpna 1998", "16.-20. srpna 2000", "16.-20. srpna 2002"],
+            "correct": 1
+        },
+        {
+            "question": "Kolik aktivních účastníků se zúčastnilo ECM-18?",
+            "options": ["900", "1000", "1100", "1200"],
+            "correct": 2
+        },
+        {
+            "question": "Z kolika zemí přijeli účastníci na ECM-18?",
+            "options": ["35", "37", "39", "41"],
+            "correct": 2
+        },
+        {
+            "question": "Která země měla nejvíce účastníků na ECM-18 po hostitelské zemi?",
+            "options": ["Velká Británie (109)", "Německo (185)", "Rusko (80)", "Francie (80)"],
+            "correct": 1
+        },
+        {
+            "question": "Do kolika paralelních sekcí byla ECM-18 organizována?",
+            "options": ["Pět", "Šest", "Sedm", "Osm"],
+            "correct": 2
+        },
+        {
+            "question": "Kolik posterových prezentací bylo na ECM-18?",
+            "options": ["458", "508", "558", "608"],
+            "correct": 2
+        },
+        {
+            "question": "Kdo přinesl myšlenku konferenční série Size-Strain?",
+            "options": ["R. Kužel", "J. Fiala", "V. Valvoda", "A. Línek"],
+            "correct": 1
+        },
+        {
+            "question": "Kdy se konala první konference Size-Strain?",
+            "options": ["1993", "1995", "1997", "1999"],
+            "correct": 1
+        },
+        {
+            "question": "Kde byla první konference Size-Strain organizována?",
+            "options": ["Praha", "Bratislava", "Liptovský Mikuláš", "Brno"],
+            "correct": 2
+        },
+        {
+            "question": "Co bylo vydáno jako výsledek první konference Size-Strain?",
+            "options": ["Sborník konference", "Monografie v řadě IUCr Oxford series", "Speciální číslo časopisu", "Technická zpráva"],
+            "correct": 1
+        },
+        {
+            "question": "Kdy se konala EPDIC IX v Praze?",
+            "options": ["2002", "2004", "2006", "2008"],
+            "correct": 1
+        },
+        {
+            "question": "Co znamená zkratka EPDIC?",
+            "options": ["Evropská konference práškové difrakce", "Evropská konference fyzikální difrakce", "Evropská konference přesné difrakce", "Evropská konference profesionální difrakce"],
             "correct": 0
         },
         {
-            "question": "What causes peak broadening in XRD patterns?",
-            "options": ["Large crystal size", "Small crystallite size and microstrain", "High temperature", "Low intensity"],
-            "correct": 1
-        },
-        {
-            "question": "Which notation represents a specific crystallographic plane?",
-            "options": ["[100]", "(100)", "{100}", "<100>"],
-            "correct": 1
-        },
-        # --- New Questions ---
-        {
-            "question": "In Bragg's Law ($nλ = 2d \\sin θ$), what does the term 'd' represent?",
-            "options": ["Crystal diameter", "Interplanar spacing", "Detector distance", "Diffraction order"],
-            "correct": 1
-        },
-        {
-            "question": "For an amorphous material, the XRD pattern typically shows:",
-            "options": ["A series of sharp, well-defined peaks", "A single sharp peak", "A broad hump or halo", "No signal at all"],
+            "question": "Kolik účastníků se zúčastnilo EPDIC IX?",
+            "options": ["Více než 280", "Více než 300", "Více než 320", "Více než 350"],
             "correct": 2
         },
         {
-            "question": "The Scherrer equation is used to estimate:",
-            "options": ["Lattice parameters", "Atomic positions", "Crystallite size", "Sample density"],
+            "question": "Z kolika zemí přijeli účastníci na EPDIC IX?",
+            "options": ["32", "34", "36", "38"],
             "correct": 2
         },
         {
-            "question": "What is the primary function of a goniometer in an XRD setup?",
-            "options": ["To generate X-rays", "To precisely control the angles ($θ$ and $2θ$)", "To cool the X-ray tube", "To filter the X-ray beam"],
+            "question": "Jaká zvláštní doprava byla organizována v posledním dni EPDIC IX?",
+            "options": ["Autobus do Brna", "Zvláštní konferenční vlak do Plzně", "Let do Vídně", "Plavba po Vltavě"],
             "correct": 1
         },
         {
-            "question": "In an X-ray tube, X-rays are generated when high-speed electrons strike the:",
-            "options": ["Cathode", "Filament", "Anode (or target)", "Beryllium window"],
+            "question": "Co znamená zkratka XTOP?",
+            "options": ["Rentgenová topografie", "7. bienální konference o vysokém rozlišení rentgenové difrakce a zobrazování", "Program rentgenové technologie a optiky", "Rozšířené rentgenové techniky a operace"],
+            "correct": 1
+        },
+        {
+            "question": "Kde se konala konference XTOP?",
+            "options": ["Pražské kongresové centrum", "Kongresové centrum Průhonice", "Masarykova univerzita Brno", "Pražský hrad"],
+            "correct": 1
+        },
+        {
+            "question": "Kdo oslavil během konference XTOP své 80. narozeniny?",
+            "options": ["Prof. V. Holý", "Prof. Andrew Lang", "Prof. Z. Šourek", "Prof. H. Hauptman"],
+            "correct": 1
+        },
+        {
+            "question": "Kolik delegátů se zúčastnilo konference XTOP?",
+            "options": ["127", "137", "147", "157"],
             "correct": 2
         },
         {
-            "question": "For a Face-Centered Cubic (FCC) lattice, reflections are observed only when the Miller indices (h, k, l) are:",
-            "options": ["All even or all odd", "A mix of even and odd", "Their sum (h+k+l) is even", "Their sum (h+k+l) is odd"],
+            "question": "Kdy se konaly workshopy o Mezinárodních krystalografických tabulkách?",
+            "options": ["1991 a 1996", "1993 a 1998", "1995 a 2000", "1997 a 2002"],
+            "correct": 1
+        },
+        {
+            "question": "Kdo vedl workshopy o Mezinárodních krystalografických tabulkách?",
+            "options": ["J. Hašek a R. Kužel", "Hans Wondratschek a Theo Hahn", "V. Kopský a D. Litvin", "M. Dušek a V. Petříček"],
+            "correct": 1
+        },
+        {
+            "question": "Kdy se konala konference Aperiodic 2015?",
+            "options": ["2014", "2015", "2016", "2017"],
+            "correct": 1
+        },
+        {
+            "question": "Kde se konala Aperiodic 2015?",
+            "options": ["Pražský hrad", "Břevnovský klášter", "Univerzita Karlova", "Akademie věd ČR"],
+            "correct": 1
+        },
+        {
+            "question": "Kdo byli hlavní organizátoři Aperiodic 2015?",
+            "options": ["J. Hašek a R. Kužel", "M. Dušek a V. Petříček", "B. Schneider a I. Kutá Smatanová", "V. Holý a Z. Šourek"],
+            "correct": 1
+        },
+        {
+            "question": "Kolik účastníků se zúčastnilo Aperiodic 2015?",
+            "options": ["110", "120", "130", "140"],
+            "correct": 2
+        },
+        {
+            "question": "Z kolika zemí přijeli účastníci na Aperiodic 2015?",
+            "options": ["25", "28", "30", "32"],
+            "correct": 2
+        },
+        {
+            "question": "Kdo měl hlavní přednášku na Aperiodic 2015?",
+            "options": ["Prof. Andrew Lang", "Prof. Ted Janssen", "Prof. Hans Wondratschek", "Prof. Theo Hahn"],
+            "correct": 1
+        },
+        {
+            "question": "Která konference je plánovaná do Prahy v roce 2016?",
+            "options": ["ECM-19", "ICCBM-16", "Size-Strain V", "EPDIC X"],
+            "correct": 1
+        },
+        {
+            "question": "Co znamená zkratka ICCBM?",
+            "options": ["Mezinárodní konference o krystalové biologii a molekulách", "Mezinárodní konference o krystalizaci biologických makromolekul", "Mezinárodní kongres o krystalových materiálech", "Mezinárodní výbor pro krystalové biologické metody"],
+            "correct": 1
+        },
+        {
+            "question": "Která konference je plánovaná do Brna v roce 2016?",
+            "options": ["EPDIC X", "XTOP-2016", "ECM-CZ", "Size-Strain V"],
+            "correct": 1
+        },
+        {
+            "question": "Na který rok byla Praha vybrána jako pořadatel 25. kongresu IUCr?",
+            "options": ["2018", "2020", "2022", "2024"],
+            "correct": 1
+        },
+        {
+            "question": "Které město bylo Prahovým soupeřem o pořádání kongresu IUCr?",
+            "options": ["Londýn", "Berlín", "Paříž", "Vídeň"],
+            "correct": 2
+        },
+        {
+            "question": "Kolik hlasů získala Praha v elektronickém hlasování o kongresu IUCr?",
+            "options": ["65 z 83", "68 z 83", "70 z 83", "72 z 83"],
+            "correct": 1
+        },
+        {
+            "question": "Co bylo historicky významné na hlasování o místě konání kongresu IUCr?",
+            "options": ["První krát ve východní Evropě", "První elektronické hlasování v historii IUCr", "Největší počet kandidátů", "Nejvyšší účast voličů"],
+            "correct": 1
+        },
+        {
+            "question": "Kdy byl R. Kužel zvolen do výkonného výboru IUCr?",
+            "options": ["2012", "2014", "2016", "2018"],
+            "correct": 1
+        },
+        {
+            "question": "Na jak dlouho byl R. Kužel zvolen do výkonného výboru IUCr?",
+            "options": ["3 roky", "4 roky", "6 let", "8 let"],
+            "correct": 2
+        },
+        {
+            "question": "Kdo je prezidentkou mezinárodní organizace pro biologickou krystalizaci (IOBCr)?",
+            "options": ["B. Schneider", "I. Kutá Smatanová", "P. Řezáčová", "J. Dohnálek"],
+            "correct": 1
+        },
+        {
+            "question": "V které komisi IUCr pracuje M. Dušek?",
+            "options": ["Práškové difrakce", "Aperiodické krystaly", "Biologické makromolekuly", "Krystalografické výpočty"],
+            "correct": 1
+        },
+        {
+            "question": "V které komisi IUCr pracuje L. Palatinus?",
+            "options": ["Práškové difrakce", "Elektronová krystalografie", "Magnetické struktury", "Mezinárodní tabulky"],
+            "correct": 1
+        },
+        {
+            "question": "V které komisi IUCr pracuje V. Petříček?",
+            "options": ["Aperiodické krystaly", "Magnetické struktury", "Elektronová krystalografie", "Krystalografická nomenklatura"],
+            "correct": 1
+        },
+        {
+            "question": "Do kterého svazku Mezinárodních tabulek přispěl B. Gruber?",
+            "options": ["Svazek A", "Svazek B", "Svazek C", "Svazek E"],
             "correct": 0
         },
         {
-            "question": "What is 'preferred orientation' in a sample for XRD?",
-            "options": ["A perfectly amorphous sample", "A sample with randomly oriented crystals", "A sample where crystals are aligned in a non-random way", "A single-crystal sample"],
-            "correct": 2
-        },
-        {
-            "question": "Rietveld refinement is a technique used for:",
-            "options": ["Determining only the peak positions", "Estimating sample weight", "Analyzing the entire diffraction pattern for detailed structural information", "Preparing the sample powder"],
-            "correct": 2
-        },
-        {
-            "question": "What is a major advantage of using a synchrotron source for XRD over a lab source?",
-            "options": ["Lower cost and smaller size", "Safer to operate", "Much higher intensity and tunable wavelength", "Less sample preparation required"],
-            "correct": 2
-        },
-        {
-            "question": "For a simple cubic crystal with lattice parameter 'a', the interplanar spacing $d_{110}$ is:",
-            "options": ["$a$", "$a/\\sqrt{2}$", "$a/\\sqrt{3}$", "$a/2$"],
-            "correct": 1
-        }
-    ],
-    "Ancient Rome": [
-        # --- Existing Questions ---
-        {
-            "question": "Who was the first Roman Emperor?",
-            "options": ["Julius Caesar", "Augustus", "Nero", "Trajan"],
+            "question": "Do které kapitoly Mezinárodních tabulek svazek C přispěl V. Valvoda?",
+            "options": ["Symetrie prostorových grup", "Záření používané v krystalografii", "Vrstevnaté uspořádání", "Matematické tabulky"],
             "correct": 1
         },
         {
-            "question": "In what year was Rome traditionally founded?",
-            "options": ["753 BC", "509 BC", "27 BC", "476 AD"],
+            "question": "Kdo přispěl do svazku E: Subperiodické grupy Mezinárodních tabulek?",
+            "options": ["M. Dušek a V. Petříček", "V. Kopský a D. Litvin", "B. Gruber a V. Valvoda", "S. Ďurovič a P. Krishna"],
+            "correct": 1
+        },
+        {
+            "question": "Jak dlouho pracoval R. Kužel ve výkonném výboru ECA?",
+            "options": ["2004-2010", "2006-2012", "2008-2014", "2010-2016"],
+            "correct": 1
+        },
+        {
+            "question": "Jak dlouho pracovala I. Kutá Smatanová ve výboru FEBS?",
+            "options": ["2 roky", "3 roky", "4 roky", "5 let"],
+            "correct": 1
+        },
+        {
+            "question": "Kdy vznikla Česká společnost pro strukturní biologii?",
+            "options": ["2008", "2010", "2012", "2014"],
+            "correct": 1
+        },
+        {
+            "question": "Jaká je webová adresa České společnosti pro strukturní biologii?",
+            "options": ["www.structbio.cz", "www.structbio.eu", "www.czech-structbio.org", "www.csb.cz"],
+            "correct": 1
+        },
+        {
+            "question": "Kolik účastníků má typicky FEBS kurs krystalizace?",
+            "options": ["15 studentů", "25 studentů", "35 studentů", "45 studentů"],
+            "correct": 1
+        },
+        {
+            "question": "Kolik přednášejících a učitelů se účastní FEBS kurzů?",
+            "options": ["Až 15", "Až 20", "Až 25", "Až 30"],
+            "correct": 1
+        },
+        {
+            "question": "Od kdy se pořádají konference Heart of Europe Bio-Crystallography Meetings?",
+            "options": ["1996", "1998", "2000", "2002"],
+            "correct": 1
+        },
+        {
+            "question": "Ve kterých zemích se střídavě konají Heart of Europe Bio-Crystallography Meetings?",
+            "options": ["Polsko, Německo, Česká republika", "Polsko, Rakousko, Slovensko", "Německo, Rakousko, Maďarsko", "Česká republika, Slovensko, Polsko"],
             "correct": 0
         },
         {
-            "question": "What was the Roman Republic's highest political office?",
-            "options": ["Praetor", "Consul", "Tribune", "Censor"],
+            "question": "Kdy se v České republice naposledy konala Heart of Europe Bio-Crystallography Meetings?",
+            "options": ["2013", "2015", "2017", "2019"],
             "correct": 1
         },
         {
-            "question": "Which structure was NOT built by the Romans?",
-            "options": ["Colosseum", "Pantheon", "Parthenon", "Circus Maximus"],
+            "question": "Kde se v ČR konala Heart of Europe Bio-Crystallography Meetings v roce 2015?",
+            "options": ["Praha", "Brno", "Kutná Hora", "České Budějovice"],
             "correct": 2
         },
         {
-            "question": "What language did the Romans speak?",
-            "options": ["Greek", "Latin", "Etruscan", "Gallic"],
+            "question": "Do kterého roku se konaly malé regionální konference o práškové difrakci?",
+            "options": ["2007", "2009", "2011", "2013"],
             "correct": 1
         },
         {
-            "question": "Who led a major slave rebellion against Rome in 73-71 BC?",
-            "options": ["Spartacus", "Vercingetorix", "Hannibal", "Boudica"],
+            "question": "Kde se většinou konaly konference o práškové difrakci?",
+            "options": ["Bratislava", "Liptovský Mikuláš", "Košice", "Zvolen"],
+            "correct": 1
+        },
+        {
+            "question": "Jak se nazývaly první série mezinárodních konferencí od 80. let?",
+            "options": ["Pokročilé metody v rentgenové strukturní analýze (AMEX)", "Evropské krystalografické metody", "Mezinárodní strukturní analýza", "Středoevropská krystalografie"],
             "correct": 0
         },
         {
-            "question": "What was the Roman term for 'bread and circuses'?",
-            "options": ["Panis et ludus", "Panem et circenses", "Pax Romana", "Veni vidi vici"],
+            "question": "Kdy se konala první AMEX konference?",
+            "options": ["1985", "1987", "1989", "1991"],
             "correct": 1
         },
         {
-            "question": "Which emperor split the Roman Empire into a tetrarchy (rule of four)?",
-            "options": ["Constantine", "Diocletian", "Theodosius", "Justinian"],
+            "question": "Kde se konala AMEX konference v roce 1990?",
+            "options": ["Karlovy Vary", "Praha", "Brno", "Bratislava"],
             "correct": 1
         },
         {
-            "question": "What was the basic tactical unit of a Roman legion?",
-            "options": ["Phalanx", "Legion", "Cohort", "Maniple"],
-            "correct": 2
-        },
-        {
-            "question": "In what year did the Western Roman Empire traditionally fall?",
-            "options": ["410 AD", "455 AD", "476 AD", "1453 AD"],
-            "correct": 2
-        },
-        # --- New Questions ---
-        {
-            "question": "Rome's adversary in the three Punic Wars was which ancient power?",
-            "options": ["The Persian Empire", "The Greek City-States", "The Kingdom of Egypt", "Carthage"],
-            "correct": 3
-        },
-        {
-            "question": "The First Triumvirate was a political alliance between Julius Caesar, Pompey the Great, and who else?",
-            "options": ["Marcus Antonius", "Marcus Crassus", "Cicero", "Lepidus"],
+            "question": "Který nositel Nobelovy ceny se zúčastnil AMEX 1990?",
+            "options": ["P. Coppens", "H. Hauptman", "M. A. Krivoglaz", "Ted Baker"],
             "correct": 1
         },
         {
-            "question": "What engineering marvel did the Romans use to bring fresh water into their cities?",
-            "options": ["Viaducts", "Aqueducts", "Sewers", "Dams"],
+            "question": "V kterých letech se konaly AMEX konference?",
+            "options": ["1985, 1988", "1987, 1990", "1989, 1992", "1991, 1994"],
             "correct": 1
         },
         {
-            "question": "The 'Ides of March' (March 15, 44 BC) is famous for what event?",
-            "options": ["The founding of Rome", "The defeat of Hannibal", "The assassination of Julius Caesar", "The eruption of Vesuvius"],
+            "question": "Co bylo speciálního na ECM-18 v kontextu 36leté historie ECM?",
+            "options": ["Nejvíce účastníků", "První v post-komunistické zemi", "Patří k několika málo ECM s více než tisíc účastníků", "Nejdelší program"],
             "correct": 2
         },
         {
-            "question": "What was the Roman Forum?",
-            "options": ["The emperor's private palace", "A large amphitheater for gladiatorial games", "The central public space for commerce, politics, and religion", "A military training ground"],
-            "correct": 2
-        },
-        {
-            "question": "Who was the Roman god of war, after whom a planet is named?",
-            "options": ["Jupiter", "Apollo", "Neptune", "Mars"],
-            "correct": 3
-        },
-        {
-            "question": "The legal foundation of the Roman Republic, established early in its history, was the:",
-            "options": ["Code of Hammurabi", "Justinian Code", "Edicts of the Praetors", "Twelve Tables"],
-            "correct": 3
-        },
-        {
-            "question": "Which emperor made Christianity the state religion of the Roman Empire?",
-            "options": ["Nero", "Constantine", "Theodosius I", "Julian the Apostate"],
-            "correct": 2
-        },
-        {
-            "question": "What was the name of the Roman garment worn by male citizens?",
-            "options": ["Tunic", "Stola", "Palla", "Toga"],
-            "correct": 3
-        },
-        {
-            "question": "Who was the last emperor of the Western Roman Empire?",
-            "options": ["Justinian", "Romulus Augustulus", "Majorian", "Zeno"],
+            "question": "Kdo byl tajemníkem ECM-18?",
+            "options": ["J. Hašek", "R. Kužel", "V. Valvoda", "Z. Šourek"],
             "correct": 1
         },
         {
-            "question": "The period of relative peace and stability across the Roman Empire beginning with Augustus is known as:",
-            "options": ["Res Publica", "Senatus Populusque Romanus", "Pax Romana", "Annus horribilis"],
+            "question": "Kolik mikrosympozií bylo na ECM-18?",
+            "options": ["38", "44", "48", "52"],
             "correct": 2
         },
         {
-            "question": "The famous Roman road, the 'Via Appia' (Appian Way), connected Rome to which southern city?",
-            "options": ["Pompeii", "Neapolis (Naples)", "Brundisium (Brindisi)", "Syracuse"],
-            "correct": 2
-        }
-    ],
-    "Fantasy TV Shows": [
+            "question": "Kolik plenárních přednášek bylo na ECM-18?",
+            "options": ["15", "18", "21", "24"],
+            "correct": 1
+        },
         {
-            "question": "In 'Game of Thrones', what is the motto of House Lannister?",
-            "options": ["Winter Is Coming", "Fire and Blood", "Hear Me Roar!", "Ours is the Fury"],
+            "question": "Kdo byl prezidentem IUCr během ECM-18?",
+            "options": ["Hans Wondratschek", "Ted Baker", "Theo Hahn", "Andrew Lang"],
+            "correct": 1
+        },
+        {
+            "question": "Kde se konalo shromáždění k 50. výročí IUCr během ECM-18?",
+            "options": ["Národní muzeum", "Státní opera", "Karolinum", "Pražský hrad"],
+            "correct": 1
+        },
+        {
+            "question": "Jaká výstava byla otevřena v Národním muzeu během ECM-18?",
+            "options": ["Krystaly světa", "Struktura mikrosvěta", "Krystalografie v historii", "Umění v krystalech"],
+            "correct": 1
+        },
+        {
+            "question": "Jak dlouho byla výstava v Národním muzeu otevřena pro veřejnost?",
+            "options": ["Jeden měsíc", "Dva měsíce", "Tři měsíce", "Čtyři měsíce"],
             "correct": 2
         },
         {
-            "question": "What is the name of the parallel dimension in 'Stranger Things'?",
-            "options": ["The Shadow Realm", "The Netherworld", "The Other Side", "The Upside Down"],
-            "correct": 3
+            "question": "Jaká kniha byla vydána po ECM-18?",
+            "options": ["Sborník konference", "Pokroky ve strukturní analýze", "Krystalografie v Evropě", "Přehled Materials Structure"],
+            "correct": 1
         },
         {
-            "question": "In 'The Witcher', what is the magical principle that often binds Geralt's fate to others?",
-            "options": ["The Law of Surprise", "The Elder Blood Oath", "The Witcher's Creed", "The Conjunction of Spheres"],
+            "question": "Kde se konala Size-Strain konference na Slovensku?",
+            "options": ["Bratislava", "Liptovský Mikuláš na Vojenské akademii", "Košice", "Zvolen"],
+            "correct": 1
+        },
+        {
+            "question": "Kdo byl místní organizátor první Size-Strain konference?",
+            "options": ["M. Koman", "P. Šutta", "S. Ďurovič", "L. Smrčok"],
+            "correct": 1
+        },
+        {
+            "question": "Kdo redigoval monografii vzniklou z první Size-Strain konference?",
+            "options": ["J. Fiala, R. Snyder, H. J. Bunge", "R. Snyder, H. J. Bunge, J. Fiala", "H. J. Bunge, J. Fiala, R. Snyder", "Všechny varianty jsou správné"],
+            "correct": 1
+        },
+        {
+            "question": "V jakém rozmezí se obvykle pohybuje účast na Size-Strain konferencích?",
+            "options": ["50-100 lidí", "100-150 lidí", "150-200 lidí", "200-250 lidí"],
+            "correct": 1
+        },
+        {
+            "question": "Kolik šestistránkových recenzovaných příspěvků bylo publikováno po EPDIC IX?",
+            "options": ["Zhruba 80", "Zhruba 100", "Zhruba 120", "Zhruba 140"],
+            "correct": 1
+        },
+        {
+            "question": "V kterém časopise byly publikovány příspěvky z EPDIC IX?",
+            "options": ["Journal of Applied Crystallography", "Zeitschrift für Kristallographie", "Acta Crystallographica", "Materials Structure"],
+            "correct": 1
+        },
+        {
+            "question": "Jakým způsobem byly příspěvky z EPDIC IX dostupné?",
+            "options": ["Pouze tištěné", "Otevřený přístup", "Pouze pro členy", "Na vyžádání"],
+            "correct": 1
+        },
+        {
+            "question": "Kde se XTOP konala ve vztahu k EPDIC IX?",
+            "options": ["Před EPDIC IX", "Současně s EPDIC IX", "Navazovala na EPDIC IX", "Nezávisle na EPDIC IX"],
+            "correct": 2
+        },
+        {
+            "question": "Na co byla XTOP tematicky zaměřena?",
+            "options": ["Obecnou krystalografii", "Teorii rentgenového rozptylu, difrakci s vysokým rozlišením", "Biologické aplikace", "Materiálové vědy"],
+            "correct": 1
+        },
+        {
+            "question": "Kolik zvaných přednášek bylo na XTOP?",
+            "options": ["7", "9", "11", "13"],
+            "correct": 1
+        },
+        {
+            "question": "Kolik dalších ústních příspěvků bylo na XTOP kromě zvaných přednášek?",
+            "options": ["32", "34", "36", "38"],
+            "correct": 1
+        },
+        {
+            "question": "Kolik posterů bylo prezentováno na XTOP?",
+            "options": ["98", "104", "110", "116"],
+            "correct": 1
+        },
+        {
+            "question": "Kdo byli předsedové XTOP konference?",
+            "options": ["J. Hašek a R. Kužel", "V. Holý a Z. Šourek", "M. Dušek a V. Petříček", "B. Schneider a I. Kutá Smatanová"],
+            "correct": 1
+        },
+        {
+            "question": "V kterém časopise vyšly recenzované články z XTOP?",
+            "options": ["Acta Crystallographica", "Journal of Physics D", "Applied Physics Letters", "Physical Review B"],
+            "correct": 1
+        },
+        {
+            "question": "Z kolika zemí a kontinentů se zúčastnilo 147 delegátů XTOP?",
+            "options": ["15 zemí, 2 kontinenty", "16 zemí, 3 kontinenty", "18 zemí, 3 kontinenty", "20 zemí, 4 kontinenty"],
+            "correct": 1
+        },
+        {
+            "question": "Které firmy podporovaly výrobu rentgenového vybavení v 50. letech?",
+            "options": ["Tesla", "Chirana", "Zeiss", "Philips"],
+            "correct": 1
+        },
+        {
+            "question": "V kterém roce byla uspoředána první mezinárodní škola krystalografického počítání?",
+            "options": ["1973", "1975", "1977", "1979"],
+            "correct": 1
+        },
+        {
+            "question": "Kolik účastníků měla mezinárodní škola krystalografického počítání v roce 1975?",
+            "options": ["Více než 150", "Více než 200", "Více než 250", "Více než 300"],
+            "correct": 1
+        },
+        {
+            "question": "Kdo organizoval mezinárodní školu krystalografického počítání?",
+            "options": ["A. Línek", "Dr. Humla z ÚMCH AV ČR", "S. Ďurovič", "J. Hašek"],
+            "correct": 1
+        },
+        {
+            "question": "Od kterého roku začala skupina pořádat pravidelné krystalografické konference?",
+            "options": ["1978", "1980", "1982", "1984"],
+            "correct": 1
+        },
+        {
+            "question": "Kolik stran měl obvykle sborník z krystalografických konferencí?",
+            "options": ["150 stran", "200 stran", "250 stran", "300 stran"],
+            "correct": 1
+        },
+        {
+            "question": "Jak se nazýval informační bulletin rozesílaný členům?",
+            "options": ["Informační zpravodaj", "Krystalografický bulletin", "Strukturní noviny", "Rentgenový věstník"],
+            "correct": 1
+        },
+        {
+            "question": "Kdo garantoval původní členství Československa v IUCr?",
+            "options": ["Akademie věd", "Přírodovědecká fakulta Karlovy univerzity", "Ministerstvo školství", "Československá vědecko-technická společnost"],
+            "correct": 1
+        },
+        {
+            "question": "Která organizace později převzala garanci členství v IUCr?",
+            "options": ["VTS", "Československá akademie věd (ČSAV)", "Univerzita Karlova", "Ministerstvo vnitra"],
+            "correct": 1
+        },
+        {
+            "question": "Pod jakou hlavičkou probíhaly aktivity většinou do roku 1991?",
+            "options": ["Akademie věd", "Skupiny pro studium materiálů ionizačním zářením Československé vědecko-technické společnosti", "Univerzita Karlova", "Ministerstvo školství"],
+            "correct": 1
+        },
+        {
+            "question": "Od kdy probíhaly přípravy k založení Krystalografické společnosti?",
+            "options": ["1984", "1986", "1988", "1990"],
+            "correct": 1
+        },
+        {
+            "question": "Kdo byly místopředsedy společnosti podle článku?",
+            "options": ["R. Kužel a I. Kutá Smatanová", "Zbyněk Šourek a Ivana Kutá Smatanová", "V. Valvoda a Z. Šourek", "J. Hašek a M. Dušek"],
+            "correct": 1
+        },
+        {
+            "question": "Na jakou webovou adresu lze najít aktuální informace o společnosti?",
+            "options": ["www.crystallography.cz", "www.xray.cz", "www.crystal.cz", "www.struct.cz"],
+            "correct": 1
+        },
+        {
+            "question": "V kterém roce byly přijaty nové stanovy společnosti?",
+            "options": ["2013", "2014", "2015", "2016"],
+            "correct": 2
+        },
+        {
+            "question": "Jaký je nový oficiální název společnosti po změně stanov?",
+            "options": ["Krystalografická společnost ČR", "Krystalografická společnost, z. s.", "Česká krystalografická společnost", "Společnost pro krystalografii"],
+            "correct": 1
+        },
+        {
+            "question": "Na kolik let bylo prodlouženo volební období podle nových stanov?",
+            "options": ["4 roky", "5 let", "6 let", "8 let"],
+            "correct": 1
+        },
+        {
+            "question": "Kde byl bulletin původně tištěn v ÚMCH AV ČR?",
+            "options": ["Ručně", "Počítačem", "Xeroxem", "Ofsetem"],
+            "correct": 1
+        },
+        {
+            "question": "V jakém formátu byl bulletin distribuován od roku 1984?",
+            "options": ["A4", "A5", "A3", "B5"],
+            "correct": 1
+        },
+        {
+            "question": "Kdo tiskl bulletin ofsetem v letech 1986-1989?",
+            "options": ["Z. Weiss v Praze", "Z. Weiss v Ostravě", "Z. Weiss v Brně", "Z. Weiss v Bratislavě"],
+            "correct": 1
+        },
+        {
+            "question": "V kterém roce se změnil formát bulletinu na klasický vědecký časopis?",
+            "options": ["1991", "1992", "1993", "1994"],
+            "correct": 2
+        },
+        {
+            "question": "V jakých jazycích vychází Materials Structure?",
+            "options": ["Pouze anglicky", "Česky a slovensky", "Česky, slovensky a anglicky", "Pouze česky"],
+            "correct": 2
+        },
+        {
+            "question": "Jaké je ISSN číslo pro online verzi Materials Structure?",
+            "options": ["1211-5894", "1805-4382", "1234-5678", "0567-8901"],
+            "correct": 1
+        },
+        {
+            "question": "Kolik čísel Materials Structure vychází ročně?",
+            "options": ["1-2", "2-4", "4-6", "6-8"],
+            "correct": 1
+        },
+        {
+            "question": "Jaký je formát letošního ročníku Materials Structure podle článku?",
+            "options": ["Dvacátý první", "Dvacátý druhý", "Dvacátý třetí", "Dvacátý čtvrtý"],
             "correct": 0
         },
         {
-            "question": "What are the names of Daenerys Targaryen's three dragons in 'Game of Thrones'?",
-            "options": ["Balerion, Meraxes, and Vhagar", "Arrax, Syrax, and Caraxes", "Drogon, Rhaegal, and Viserion", "Smaug, Ancalagon, and Glaurung"],
-            "correct": 2
-        },
-        {
-            "question": "In 'The Lord of the Rings: The Rings of Power', what is the rare and prized metal mined by the Dwarves?",
-            "options": ["Adamantium", "Vibranium", "Beskar", "Mithril"],
-            "correct": 3
-        },
-        {
-            "question": "The character Eleven in 'Stranger Things' is primarily known for what supernatural ability?",
-            "options": ["Pyrokinesis", "Telekinesis", "Invisibility", "Teleportation"],
+            "question": "Kde jsou dostupné všechny články Materials Structure ve formátu PDF?",
+            "options": ["www.materials.cz", "www.xray.cz/ms", "www.structur.cz", "www.crystal.cz/articles"],
             "correct": 1
         },
         {
-            "question": "In 'House of the Dragon', the conflict is a war of succession within which house?",
-            "options": ["House Stark", "House Targaryen", "House Lannister", "House Velaryon"],
+            "question": "Z které databáze je Materials Structure také dostupný?",
+            "options": ["ResearchGate", "Directory of Open Access Journals", "Google Scholar", "Academia.edu"],
             "correct": 1
         },
         {
-            "question": "What is the name of the main character in 'The Sandman', who is one of the Endless?",
-            "options": ["Destiny", "Death", "Dream", "Desire"],
-            "correct": 2
-        },
-        {
-            "question": "In 'The Wheel of Time', what is the term for female channelers of the One Power?",
-            "options": ["Bene Gesserit", "Moirai", "Aes Sedai", "Valar"],
-            "correct": 2
-        },
-        {
-            "question": "In 'Avatar: The Last Airbender', what is the name of Aang's flying bison?",
-            "options": ["Momo", "Naga", "Pabu", "Appa"],
-            "correct": 3
-        },
-        {
-            "question": "What is the name of Arya Stark's direwolf in 'Game of Thrones'?",
-            "options": ["Ghost", "Lady", "Nymeria", "Summer"],
-            "correct": 2
-        },
-        {
-            "question": "The main antagonist introduced in season 4 of 'Stranger Things' is known as:",
-            "options": ["The Mind Flayer", "The Demogorgon", "Vecna", "The Spider-Monster"],
-            "correct": 2
-        },
-        {
-            "question": "In 'Shadow and Bone', what is the name of the massive, monster-filled chasm of darkness that divides the land?",
-            "options": ["The Blight", "The Fold", "The Dead Zone", "The Unsea"],
+            "question": "Jaká je zkratka pro Directory of Open Access Journals?",
+            "options": ["DOAR", "DOAJ", "DOJA", "DJOA"],
             "correct": 1
-        },
-        {
-            "question": "Who plays the titular character, Geralt of Rivia, in the first three seasons of 'The Witcher'?",
-            "options": ["Liam Hemsworth", "Henry Cavill", "Mads Mikkelsen", "Travis Fimmel"],
-            "correct": 1
-        }
-    ],
-    "Molecular Dynamics and DFT Simulations": [
-        {
-            "question": "Molecular Dynamics (MD) simulations primarily solve which fundamental equation of motion?",
-            "options": ["Newton's second law ($F=ma$)", "The time-dependent Schrödinger equation", "Maxwell's equations", "The ideal gas law"],
-            "correct": 0
-        },
-        {
-            "question": "In Density Functional Theory (DFT), the properties of a system are determined from what fundamental quantity?",
-            "options": ["The many-body wavefunction", "The electron density", "The partition function", "The atomic coordinates"],
-            "correct": 1
-        },
-        {
-            "question": "In classical MD, the set of potential energy functions and parameters used to describe interactions between atoms is called a:",
-            "options": ["Hamiltonian", "Basis set", "Force field", "Pseudopotential"],
-            "correct": 2
-        },
-        {
-            "question": "What is the most significant approximation made in practical Kohn-Sham DFT calculations?",
-            "options": ["The Born-Oppenheimer approximation", "The use of a finite basis set", "The form of the exchange-correlation (XC) functional", "The ideal gas approximation"],
-            "correct": 2
-        },
-        {
-            "question": "An MD simulation performed in the NVT ensemble conserves the number of particles (N), volume (V), and what else?",
-            "options": ["Total energy (E)", "Pressure (P)", "Enthalpy (H)", "Temperature (T)"],
-            "correct": 3
-        },
-        {
-            "question": "Which of these is a common integration algorithm for solving the equations of motion in MD?",
-            "options": ["Lanczos algorithm", "Verlet algorithm", "Metropolis algorithm", "Fast Fourier Transform"],
-            "correct": 1
-        },
-        {
-            "question": "What is the typical time step for an all-atom MD simulation of a biomolecule?",
-            "options": ["1-2 femtoseconds ($10^{-15}$ s)", "1-2 picoseconds ($10^{-12}$ s)", "1-2 nanoseconds ($10^{-9}$ s)", "1-2 microseconds ($10^{-6}$ s)"],
-            "correct": 0
-        },
-        {
-            "question": "In the 'Jacob's Ladder' of DFT functionals, what does GGA stand for?",
-            "options": ["Global Gradient Algorithm", "Gaussian Gradient Approximation", "Generalized Gradient Approximation", "General Gibbs Average"],
-            "correct": 2
-        },
-        {
-            "question": "The use of Periodic Boundary Conditions (PBC) in a simulation is intended to:",
-            "options": ["Model a system in a vacuum", "Reduce the computational cost of integrals", "Minimize surface effects and mimic a bulk system", "Enforce the Pauli exclusion principle"],
-            "correct": 2
-        },
-        {
-            "question": "What is the purpose of a pseudopotential in a plane-wave DFT calculation?",
-            "options": ["To describe van der Waals interactions", "To replace core electrons with an effective potential", "To ensure the total charge is neutral", "To accelerate the convergence of the wavefunction"],
-            "correct": 1
-        },
-        {
-            "question": "The Nosé-Hoover and Berendsen methods are examples of algorithms commonly used as:",
-            "options": ["Barostats (pressure control)", "Thermostats (temperature control)", "Long-range electrostatic solvers", "Numerical integrators"],
-            "correct": 1
-        },
-        {
-            "question": "The two Hohenberg-Kohn theorems provide the formal foundation for which method?",
-            "options": ["Molecular Dynamics", "Hartree-Fock theory", "Density Functional Theory", "Monte Carlo methods"],
-            "correct": 2
         }
     ]
-}
-
-
-CLASSICAL_LITERATURE = {
-    "Classical Literature": [
-        {
-            "question": "Who is the author of 'Pride and Prejudice'?",
-            "options": ["Charlotte Brontë", "Mary Shelley", "Jane Austen", "George Eliot"],
-            "correct": 2
-        },
-        {
-            "question": "In 'Moby Dick', what is the name of the captain obsessed with hunting the white whale?",
-            "options": ["Ishmael", "Starbuck", "Ahab", "Queequeg"],
-            "correct": 2
-        },
-        {
-            "question": "Which of these is a famous tragedy by William Shakespeare?",
-            "options": ["A Midsummer Night's Dream", "The Tempest", "As You Like It", "Hamlet"],
-            "correct": 3
-        },
-        {
-            "question": "Fyodor Dostoevsky's 'Crime and Punishment' primarily follows which character?",
-            "options": ["Dmitri Karamazov", "Prince Myshkin", "Raskolnikov", "Alyosha Karamazov"],
-            "correct": 2
-        },
-        {
-            "question": "What is the opening line of Leo Tolstoy's 'Anna Karenina'?",
-            "options": [
-                "'It is a truth universally acknowledged, that a single man in possession of a good fortune, must be in want of a wife.'",
-                "'Call me Ishmael.'",
-                "'All happy families are alike; each unhappy family is unhappy in its own way.'",
-                "'It was the best of times, it was the worst of times...'"
-            ],
-            "correct": 2
-        },
-        {
-            "question": "Who wrote the epic poems 'The Iliad' and 'The Odyssey'?",
-            "options": ["Virgil", "Homer", "Sophocles", "Ovid"],
-            "correct": 1
-        },
-        {
-            "question": "The novel '1984', which introduced concepts like 'Big Brother' and 'thoughtcrime', was written by whom?",
-            "options": ["Aldous Huxley", "Ray Bradbury", "George Orwell", "H.G. Wells"],
-            "correct": 2
-        },
-        {
-            "question": "In Dante Alighieri's 'Inferno', who guides Dante through the nine circles of Hell?",
-            "options": ["Beatrice", "Charon", "Saint Peter", "Virgil"],
-            "correct": 3
-        },
-        {
-            "question": "'To Kill a Mockingbird' is set in which fictional town in Alabama?",
-            "options": ["Macomb", "Maycomb", "West Egg", "St. Petersburg"],
-            "correct": 1
-        },
-        {
-            "question": "Which author wrote 'Don Quixote', a pioneering work of Western literature?",
-            "options": ["Jorge Luis Borges", "Gabriel García Márquez", "Miguel de Cervantes", "Isabel Allende"],
-            "correct": 2
-        }
-    ]
-}
-
-ANIMATED_MOVIES = {
-    "Animated Disney and Pixar Movies": [
-        # --- First set of questions ---
-        {
-            "question": "In Disney's 'The Lion King', what is the name of Simba's wicked uncle?",
-            "options": ["Mufasa", "Zazu", "Scar", "Pumbaa"],
-            "correct": 2
-        },
-        {
-            "question": "What is the name of the cowboy doll and central character in Pixar's 'Toy Story'?",
-            "options": ["Buzz Lightyear", "Woody", "Mr. Potato Head", "Slinky Dog"],
-            "correct": 1
-        },
-        {
-            "question": "In 'Frozen', what is the name of the magical snowman created by Elsa?",
-            "options": ["Sven", "Kristoff", "Hans", "Olaf"],
-            "correct": 3
-        },
-        {
-            "question": "The Pixar movie 'Up' features a house lifted by thousands of what?",
-            "options": ["Propellers", "Jet Engines", "Balloons", "Birds"],
-            "correct": 2
-        },
-        {
-            "question": "In 'Aladdin', what is the first wish Aladdin asks of the Genie?",
-            "options": ["To be rich", "To get out of the cave", "To become a prince", "To win Jasmine's heart"],
-            "correct": 2
-        },
-        {
-            "question": "What type of fish are Marlin and Nemo in Pixar's 'Finding Nemo'?",
-            "options": ["Blue Tang", "Goldfish", "Clownfish", "Pufferfish"],
-            "correct": 2
-        },
-        {
-            "question": "In 'Moana', the ocean is a character that helps Moana on her quest to find whom?",
-            "options": ["The goddess Te Fiti", "Her ancestor, Maui", "The demigod Maui", "The lava monster Te Kā"],
-            "correct": 2
-        },
-        {
-            "question": "What is the motto of the monster world in 'Monsters, Inc.'?",
-            "options": ["'We Scare Because We Care'", "'Screaming is our business'", "'Your fear is our fuel'", "'Got a scream? We're your team!'"],
-            "correct": 0
-        },
-        {
-            "question": "In Disney's 'Beauty and the Beast', what is the name of the enchanted candelabra?",
-            "options": ["Cogsworth", "Lumière", "Gaston", "Chip"],
-            "correct": 1
-        },
-        {
-            "question": "The main character in Pixar's 'Ratatouille', a rat with a passion for cooking, is named:",
-            "options": ["Emile", "Django", "Linguini", "Remy"],
-            "correct": 3
-        },
-        # --- Second set of questions ---
-        {
-            "question": "In Pixar's 'Inside Out', which emotion is the leader of the group in Riley's mind?",
-            "options": ["Sadness", "Anger", "Fear", "Joy"],
-            "correct": 3
-        },
-        {
-            "question": "What is the name of the kingdom where Disney's 'Tangled' is set?",
-            "options": ["Arendelle", "Corona", "Atlantica", "Maldonia"],
-            "correct": 1
-        },
-        {
-            "question": "In 'The Incredibles', what is the superpower of the daughter, Violet Parr?",
-            "options": ["Super speed", "Invisibility and force fields", "Elasticity", "Super strength"],
-            "correct": 1
-        },
-        {
-            "question": "What kind of animal is the demigod Maui in Disney's 'Moana' able to transform into with his fishhook?",
-            "options": ["A lion", "A shark", "A giant hawk", "A gecko"],
-            "correct": 2
-        },
-        {
-            "question": "In Pixar's 'Coco', what must Miguel obtain to return to the Land of the Living?",
-            "options": ["A magical guitar", "His family's blessing", "The marigold bridge", "A special song"],
-            "correct": 1
-        },
-        {
-            "question": "What is the name of the restaurant that Remy the rat works at in 'Ratatouille'?",
-            "options": ["Le Grand Véfour", "La Tour d'Argent", "Auguste Gusteau's", "Le Procope"],
-            "correct": 2
-        },
-        {
-            "question": "In Disney's 'Zootopia', what are the respective professions of the two main characters, Judy Hopps and Nick Wilde?",
-            "options": ["Farmer and thief", "Police officer and con artist", "Mayor and journalist", "Dancer and musician"],
-            "correct": 1
-        },
-        {
-            "question": "Which Pixar movie is set in a post-apocalyptic Earth where a small robot is left to clean up the planet?",
-            "options": ["Cars", "Up", "Brave", "WALL-E"],
-            "correct": 3
-        },
-        {
-            "question": "In 'Mulan', what is the name of the small, red dragon who serves as Mulan's guardian?",
-            "options": ["Li Shang", "Mushu", "Cri-Kee", "Yao"],
-            "correct": 1
-        },
-        {
-            "question": "In 'Toy Story 2', Woody is stolen by a collector who owns which themed restaurant?",
-            "options": ["Pizza Planet", "Al's Toy Barn", "The Poultry Palace", "Flo's V8 Cafe"],
-            "correct": 1
-        }
-    ]
-}
-
-QUESTION_TOPICS.update(ANIMATED_MOVIES)
-QUESTION_TOPICS.update(CLASSICAL_LITERATURE)
+};
