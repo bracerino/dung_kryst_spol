@@ -276,7 +276,7 @@ QUESTION_TOPICS = {
             "correct": 1
         },
         {
-            "question": "Která konference je plánovaná do Prahy v roce 2016?",
+            "question": "Která konference se uskutečnila v roce v Praze 2016?",
             "options": ["ECM-19", "ICCBM-16", "Size-Strain V", "EPDIC X"],
             "correct": 1
         },
@@ -286,7 +286,7 @@ QUESTION_TOPICS = {
             "correct": 1
         },
         {
-            "question": "Která konference je plánovaná do Brna v roce 2016?",
+            "question": "Která konference se uskutečnila v Brně v roce 2016?",
             "options": ["EPDIC X", "XTOP-2016", "ECM-CZ", "Size-Strain V"],
             "correct": 1
         },
