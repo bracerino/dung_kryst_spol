@@ -644,7 +644,7 @@ def generate_problem():
     rand = random.random()
     if rand < 0.20:  # 25% math problems
         return generate_math_problem()
-    elif rand < 0.15:  # 20% rock paper scissors
+    elif rand < 0.35:  # 20% rock paper scissors
         return generate_rps_problem()
     else:  # 40% multiple choice questions
         return generate_multiple_choice_question()
