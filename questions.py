@@ -41,14 +41,9 @@ QUESTION_TOPICS = {
             "correct": 1
         },
         {
-            "question": "Kolik registrovaných členů má Krystalografická společnost?",
+            "question": "Kolik přibližně registrovaných členů má Krystalografická společnost?",
             "options": ["250", "300", "350", "400"],
             "correct": 2
-        },
-        {
-            "question": "Na kolik pracovišť se v posledních letech snížil počet z původních 74?",
-            "options": ["Cca 40", "Cca 50", "Cca 60", "Cca 70"],
-            "correct": 1
         },
         {
             "question": "Kdy se poprvé objevil Bulletin Krystalografické společnosti?",
@@ -56,14 +51,9 @@ QUESTION_TOPICS = {
             "correct": 1
         },
         {
-            "question": "Jak se dnes nazývá časopis společnosti?",
+            "question": "Jak se dnes nazývá časopis Krystalografické společnosti?",
             "options": ["Krystalografický bulletin", "Materials Structure", "Materials Structure in Chemistry, Biology, Physics and Technology", "Český krystalografický časopis"],
             "correct": 2
-        },
-        {
-            "question": "Jaké je ISSN číslo pro tištěnou verzi Materials Structure?",
-            "options": ["1211-5894", "1805-4382", "1234-5678", "0567-8901"],
-            "correct": 0
         },
         {
             "question": "Kdo je šéfredaktorem Materials Structure od roku 1994?",
@@ -73,11 +63,6 @@ QUESTION_TOPICS = {
         {
             "question": "Kde se konalo první kolokvium v roce 1980?",
             "options": ["Beskydy", "Lysolaje (Beskydy)", "Praha", "Brno"],
-            "correct": 1
-        },
-        {
-            "question": "Jak se dnes nazývají výroční konference?",
-            "options": ["Kolokvium + rok", "Struktura + rok", "Česká krystalografie + rok", "ECM-CZ + rok"],
             "correct": 1
         },
         {
@@ -91,12 +76,12 @@ QUESTION_TOPICS = {
             "correct": 2
         },
         {
-            "question": "Kdy se konal konkurs na logo?",
+            "question": "Kdy se konal konkurs na logo Krystalografické společnosti?",
             "options": ["Leden 1987", "Leden 1988", "Leden 1989", "Leden 1990"],
             "correct": 1
         },
         {
-            "question": "Co zobrazuje logo společnosti?",
+            "question": "Co zobrazuje logo Krystalografické společnosti?",
             "options": ["Krystalovou strukturu", "Šestičetnou symetrii a difrakci paprsků X na rovinách krystalu", "Molekulární strukturu", "Laboratorní vybavení"],
             "correct": 1
         },
@@ -106,7 +91,7 @@ QUESTION_TOPICS = {
             "correct": 1
         },
         {
-            "question": "Které minerály jsou součástí cechovního práva?",
+            "question": "Které minerály byly využity při výrobě cechovního práva (žezla Krystalografické spoleènosti?",
             "options": ["Křemen, kalcit, pyrit, fluorit", "Křemen z Žulové ve Slezsku, amfibol z Valeče v Doupovských vrších, kalcit z rudných dolů a pyrit z dolů ve Vintířově", "Diamant, rubín, safír, smaragd", "Živec, slída, amfibol, olivín"],
             "correct": 1
         },
@@ -191,31 +176,6 @@ QUESTION_TOPICS = {
             "correct": 1
         },
         {
-            "question": "Kolik aktivních účastníků se zúčastnilo ECM-18?",
-            "options": ["900", "1000", "1100", "1200"],
-            "correct": 2
-        },
-        {
-            "question": "Z kolika zemí přijeli účastníci na ECM-18?",
-            "options": ["35", "37", "39", "41"],
-            "correct": 2
-        },
-        {
-            "question": "Která země měla nejvíce účastníků na ECM-18 po hostitelské zemi?",
-            "options": ["Velká Británie (109)", "Německo (185)", "Rusko (80)", "Francie (80)"],
-            "correct": 1
-        },
-        {
-            "question": "Do kolika paralelních sekcí byla ECM-18 organizována?",
-            "options": ["Pět", "Šest", "Sedm", "Osm"],
-            "correct": 2
-        },
-        {
-            "question": "Kolik posterových prezentací bylo na ECM-18?",
-            "options": ["458", "508", "558", "608"],
-            "correct": 2
-        },
-        {
             "question": "Kdo přinesl myšlenku konferenční série Size-Strain?",
             "options": ["R. Kužel", "J. Fiala", "V. Valvoda", "A. Línek"],
             "correct": 1
@@ -274,11 +234,6 @@ QUESTION_TOPICS = {
             "question": "Kdo oslavil během konference XTOP své 80. narozeniny?",
             "options": ["Prof. V. Holý", "Prof. Andrew Lang", "Prof. Z. Šourek", "Prof. H. Hauptman"],
             "correct": 1
-        },
-        {
-            "question": "Kolik delegátů se zúčastnilo konference XTOP?",
-            "options": ["127", "137", "147", "157"],
-            "correct": 2
         },
         {
             "question": "Kdy se konaly workshopy o Mezinárodních krystalografických tabulkách?",
@@ -551,11 +506,6 @@ QUESTION_TOPICS = {
             "correct": 1
         },
         {
-            "question": "Kolik šestistránkových recenzovaných příspěvků bylo publikováno po EPDIC IX?",
-            "options": ["Zhruba 80", "Zhruba 100", "Zhruba 120", "Zhruba 140"],
-            "correct": 1
-        },
-        {
             "question": "V kterém časopise byly publikovány příspěvky z EPDIC IX?",
             "options": ["Journal of Applied Crystallography", "Zeitschrift für Kristallographie", "Acta Crystallographica", "Materials Structure"],
             "correct": 1
@@ -576,21 +526,6 @@ QUESTION_TOPICS = {
             "correct": 1
         },
         {
-            "question": "Kolik zvaných přednášek bylo na XTOP?",
-            "options": ["7", "9", "11", "13"],
-            "correct": 1
-        },
-        {
-            "question": "Kolik dalších ústních příspěvků bylo na XTOP kromě zvaných přednášek?",
-            "options": ["32", "34", "36", "38"],
-            "correct": 1
-        },
-        {
-            "question": "Kolik posterů bylo prezentováno na XTOP?",
-            "options": ["98", "104", "110", "116"],
-            "correct": 1
-        },
-        {
             "question": "Kdo byli předsedové XTOP konference?",
             "options": ["J. Hašek a R. Kužel", "V. Holý a Z. Šourek", "M. Dušek a V. Petříček", "B. Schneider a I. Kutá Smatanová"],
             "correct": 1
@@ -598,11 +533,6 @@ QUESTION_TOPICS = {
         {
             "question": "V kterém časopise vyšly recenzované články z XTOP?",
             "options": ["Acta Crystallographica", "Journal of Physics D", "Applied Physics Letters", "Physical Review B"],
-            "correct": 1
-        },
-        {
-            "question": "Z kolika zemí a kontinentů se zúčastnilo 147 delegátů XTOP?",
-            "options": ["15 zemí, 2 kontinenty", "16 zemí, 3 kontinenty", "18 zemí, 3 kontinenty", "20 zemí, 4 kontinenty"],
             "correct": 1
         },
         {
@@ -628,11 +558,6 @@ QUESTION_TOPICS = {
         {
             "question": "Od kterého roku začala skupina pořádat pravidelné krystalografické konference?",
             "options": ["1978", "1980", "1982", "1984"],
-            "correct": 1
-        },
-        {
-            "question": "Kolik stran měl obvykle sborník z krystalografických konferencí?",
-            "options": ["150 stran", "200 stran", "250 stran", "300 stran"],
             "correct": 1
         },
         {
@@ -711,11 +636,6 @@ QUESTION_TOPICS = {
             "correct": 2
         },
         {
-            "question": "Jaké je ISSN číslo pro online verzi Materials Structure?",
-            "options": ["1211-5894", "1805-4382", "1234-5678", "0567-8901"],
-            "correct": 1
-        },
-        {
             "question": "Kolik čísel Materials Structure vychází ročně?",
             "options": ["1-2", "2-4", "4-6", "6-8"],
             "correct": 1
@@ -739,6 +659,156 @@ QUESTION_TOPICS = {
             "question": "Jaká je zkratka pro Directory of Open Access Journals?",
             "options": ["DOAR", "DOAJ", "DOJA", "DJOA"],
             "correct": 1
-        }
+        },
+         {
+        "question": "Jaký je základní princip Rietveldovy metody?",
+        "options": ["Získání Millerových indexů", "Indexace difrakčního vzoru", "Rafinace celého práškového difrakčního vzoru", "Určení symetrických prvků"],
+        "correct": 2
+    },
+    {
+        "question": "Který elementární prvek krystalizuje v diamantové struktuře?",
+        "options": ["Uhlík", "Křemík", "Germanium", "Všechny uvedené"],
+        "correct": 3
+    },
+    {
+        "question": "Jaké záření se používá v neutronové difrakci?",
+        "options": ["Synchrotronové záření", "Rentgenové záření", "Neutrony", "Elektrony"],
+        "correct": 2
+    },
+    {
+        "question": "Jak se označuje hlavní vektor reciproční mřížky v difrakčním experimentu?",
+        "options": ["Millerův vektor", "Braggův vektor", "Difrakční vektor", "Laueův vektor"],
+        "correct": 2
+    },
+    {
+        "question": "Kdo zavedl koncept reciproční mřížky?",
+        "options": ["Ewald", "Bravais", "Laue", "Bragg"],
+        "correct": 0
+    },
+    {
+        "question": "Která metoda je vhodná pro určování struktury proteinů?",
+        "options": ["Rentgenová prášková difrakce", "Neutronová difrakce", "Single crystal X-ray diffraction", "Elektronová mikroskopie"],
+        "correct": 2
+    },
+    {
+        "question": "Který český vědec přispěl do Mezinárodních tabulek svazku C kapitolou o záření?",
+        "options": ["Vladimír Valvoda", "Václav Petříček", "Bořivoj Gruber", "Petr Mikula"],
+        "correct": 0
+    },
+    {
+        "question": "Jaký je hlavní výstup Pattersonovy metody?",
+        "options": ["Pozice atomů", "Rozložení elektronové hustoty", "Mapa interatomových vektorů", "Krystalová symetrie"],
+        "correct": 2
+    },
+    {
+        "question": "Který z uvedených typů difrakce je vhodný pro velmi malé krystaly?",
+        "options": ["Rentgenová prášková difrakce", "Neutronová difrakce", "Single crystal X-ray diffraction", "Elektronová difrakce"],
+        "correct": 3
+    },
+    {
+        "question": "Jaká je základní jednotka krystalové mřížky?",
+        "options": ["Millerova rovina", "Asymetrická jednotka", "Jednotková buňka", "Mřížkový bod"],
+        "correct": 2
+    },
+    {
+        "question": "Který z následujících vědců je známý díky Braggově rovnici?",
+        "options": ["Laue", "Ewald", "Braggové", "Röntgen"],
+        "correct": 2
+    },
+    {
+        "question": "Jaký je význam Millerových indexů?",
+        "options": ["Popisují barvu krystalu", "Označují směry a roviny v krystalu", "Udávají hmotnost atomů", "Definují teplotu fázového přechodu"],
+        "correct": 1
+    },
+    {
+        "question": "Jaký je hlavní účel Fourierovy transformace v krystalografii?",
+        "options": ["Změřit mřížkové konstanty", "Transformovat difrakční data na elektronovou hustotu", "Získat fyzikální rozměry krystalu", "Získat informace o barvě krystalu"],
+        "correct": 1
+    },
+    {
+        "question": "Kolik je základních Bravaisových mřížek?",
+        "options": ["7", "14", "23", "32"],
+        "correct": 1
+    },
+    {
+        "question": "Co popisuje Laueova metoda?",
+        "options": ["Rentgenovou fluorescenci", "Difrakci na práškovém vzorku", "Difrakci bílým zářením na krystalu", "Určování atomových čísel"],
+        "correct": 2
+    },
+    {
+        "question": "K čemu slouží tzv. Wilsonův diagram?",
+        "options": ["K určení atomového složení", "K vyhodnocení fázových problémů", "K normalizaci intenzit difrakce", "K analýze symetrie krystalu"],
+        "correct": 2
+    },
+    {
+        "question": "Co je to F-centra v krystalové struktuře?",
+        "options": ["Atom vodíku", "Porucha mřížky – vakance vyplněná elektronem", "Centrum rotace", "Fluorescenční jádro"],
+        "correct": 1
+    },
+    {
+        "question": "Jaký typ mřížky má NaCl?",
+        "options": ["Kubická plošně centrovaná", "Kubická prostorově centrovaná", "Šesterečná", "Kubická jednoduchá"],
+        "correct": 0
+    },
+    {
+        "question": "Který program je široce používán k řešení krystalových struktur pomocí Rietveldovy metody?",
+        "options": ["SHELX", "Jana2006", "Olex2", "CRYSTALS"],
+        "correct": 1
+    },
+    {
+        "question": "Který z následujících vědců získal Nobelovu cenu za výzkum v oblasti krystalografie?",
+        "options": ["Max von Laue", "Linus Pauling", "Enrico Fermi", "Werner Heisenberg"],
+        "correct": 0
+    },
+    {
+        "question": "Jaká je hlavní výhoda synchrotronového záření v krystalografii?",
+        "options": ["Vysoká koherence", "Nízká energie", "Snadná produkce", "Neabsorbuje se v krystalu"],
+        "correct": 0
+    },
+    {
+        "question": "Kolik existuje soustav krystalových tříd?",
+        "options": ["7", "14", "32", "230"],
+        "correct": 2
+    },
+    {
+        "question": "Co je výsledkem indexace práškového difrakčního vzoru?",
+        "options": ["Seznam atomů", "Krystalová struktura", "Parametry jednotkové buňky", "Mapa elektronové hustoty"],
+        "correct": 2
+    },
+    {
+        "question": "Co je hlavním problémem při řešení fází v krystalografii?",
+        "options": ["Nedostatek dat", "Absence amplitud", "Neznámé fáze odražených vln", "Přítomnost šumu v experimentu"],
+        "correct": 2
+    },
+    {
+        "question": "Jaká symetrie je přítomna v hexagonální soustavě?",
+        "options": ["Trojčetná osa", "Pětinásobná osa", "Šestinásobná osa", "Čtyřnásobná osa"],
+        "correct": 2
+    },
+    {
+        "question": "Která metoda se používá k určení pozice vodíku v krystalu?",
+        "options": ["Rentgenová difrakce", "Neutronová difrakce", "Ramanova spektroskopie", "IR spektroskopie"],
+        "correct": 1
+    },
+    {
+        "question": "Jaký je hlavní účel tzv. asymetrické jednotky?",
+        "options": ["Reprezentovat nejmenší opakující se část krystalu", "Zobrazit celou strukturu", "Popsat mřížkové parametry", "Určit hustotu krystalu"],
+        "correct": 0
+    },
+    {
+        "question": "Který český vědec vyvinul software Jana2006?",
+        "options": ["Petr Mikula", "Vladimír Valvoda", "Václav Petříček", "Bořivoj Gruber"],
+        "correct": 2
+    },
+    {
+        "question": "Jaký je rozdíl mezi symetrickými a asymetrickými operacemi v krystalografii?",
+        "options": ["Asymetrické operace jsou zakázané", "Symetrické operace zahrnují translaci", "Asymetrické operace zahrnují změnu chirality", "Symetrické operace zachovávají strukturu"],
+        "correct": 3
+    },
+    {
+        "question": "Jak se označuje vzdálenost mezi dvěma rovinami v mřížce?",
+        "options": ["Mřížková konstanta", "Difrakční úhel", "d-vzdálenost", "Interferenční vzdálenost"],
+        "correct": 2
+    }
     ]
 };
