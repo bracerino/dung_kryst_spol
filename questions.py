@@ -66,8 +66,8 @@ QUESTION_TOPICS = {
             "correct": 1
         },
         {
-            "question": "Kolik kolokvií bylo zorganizováno do roku 2016?",
-            "options": ["25", "28", "30", "32"],
+            "question": "Kolik kolokvií bylo zorganizováno do roku 2025?",
+            "options": ["35", "40", "45", "50"],
             "correct": 2
         },
         {
@@ -91,7 +91,7 @@ QUESTION_TOPICS = {
             "correct": 1
         },
         {
-            "question": "Které minerály byly využity při výrobě cechovního práva (žezla Krystalografické spoleènosti?",
+            "question": "Které minerály byly využity při výrobě cechovního práva (žezla Krystalografické společnosti?",
             "options": ["Křemen, kalcit, pyrit, fluorit", "Křemen z Žulové ve Slezsku, amfibol z Valeče v Doupovských vrších, kalcit z rudných dolů a pyrit z dolů ve Vintířově", "Diamant, rubín, safír, smaragd", "Živec, slída, amfibol, olivín"],
             "correct": 1
         },
@@ -141,32 +141,12 @@ QUESTION_TOPICS = {
             "correct": 1
         },
         {
-            "question": "Kolik účastníků se zúčastnilo posledních Setkání strukturních biologů?",
+            "question": "Kolik účastníků se zúčastnilo posledních Setkání strukturních biologů v roce 2016?",
             "options": ["Přes 100", "Přes 120", "Přes 150", "Přes 200"],
             "correct": 1
         },
         {
-            "question": "Od kdy se pořádají FEBS kurzy makromolekulární krystalizace?",
-            "options": ["2002", "2004", "2006", "2008"],
-            "correct": 1
-        },
-        {
-            "question": "Jaký je úplný název FEBS kurzů?",
-            "options": ["Pokročilé metody v makromolekulární krystalizaci", "Evropské krystalizační metody", "Techniky krystalizace proteinů", "Studie biologických makromolekul"],
-            "correct": 0
-        },
-        {
-            "question": "Kdo jsou hlavní organizátorky FEBS kurzů?",
-            "options": ["B. Schneider a J. Hašek", "Ivana Kutá Smatanová a Pavlína Řezáčová", "R. Kužel a M. Dušek", "V. Petříček a Z. Šourek"],
-            "correct": 1
-        },
-        {
-            "question": "Kolik FEBS kurzů krystalizace se konalo do roku 2016?",
-            "options": ["Pět", "Šest", "Sedm", "Osm"],
-            "correct": 2
-        },
-        {
-            "question": "Která byla největší mezinárodní konference pořádaná Krystalografickou společností?",
+            "question": "Která byla největší mezinárodní konference pořádaná Krystalografickou společností do roku 2016?",
             "options": ["EPDIC IX", "ECM-18", "Size-Strain IV", "XTOP"],
             "correct": 1
         },
@@ -218,11 +198,6 @@ QUESTION_TOPICS = {
         {
             "question": "Jaká zvláštní doprava byla organizována v posledním dni EPDIC IX?",
             "options": ["Autobus do Brna", "Zvláštní konferenční vlak do Plzně", "Let do Vídně", "Plavba po Vltavě"],
-            "correct": 1
-        },
-        {
-            "question": "Co znamená zkratka XTOP?",
-            "options": ["Rentgenová topografie", "7. bienální konference o vysokém rozlišení rentgenové difrakce a zobrazování", "Program rentgenové technologie a optiky", "Rozšířené rentgenové techniky a operace"],
             "correct": 1
         },
         {
@@ -356,16 +331,6 @@ QUESTION_TOPICS = {
             "correct": 1
         },
         {
-            "question": "Jak dlouho pracoval R. Kužel ve výkonném výboru ECA?",
-            "options": ["2004-2010", "2006-2012", "2008-2014", "2010-2016"],
-            "correct": 1
-        },
-        {
-            "question": "Jak dlouho pracovala I. Kutá Smatanová ve výboru FEBS?",
-            "options": ["2 roky", "3 roky", "4 roky", "5 let"],
-            "correct": 1
-        },
-        {
             "question": "Kdy vznikla Česká společnost pro strukturní biologii?",
             "options": ["2008", "2010", "2012", "2014"],
             "correct": 1
@@ -373,16 +338,6 @@ QUESTION_TOPICS = {
         {
             "question": "Jaká je webová adresa České společnosti pro strukturní biologii?",
             "options": ["www.structbio.cz", "www.structbio.eu", "www.czech-structbio.org", "www.csb.cz"],
-            "correct": 1
-        },
-        {
-            "question": "Kolik účastníků má typicky FEBS kurs krystalizace?",
-            "options": ["15 studentů", "25 studentů", "35 studentů", "45 studentů"],
-            "correct": 1
-        },
-        {
-            "question": "Kolik přednášejících a učitelů se účastní FEBS kurzů?",
-            "options": ["Až 15", "Až 20", "Až 25", "Až 30"],
             "correct": 1
         },
         {
@@ -396,11 +351,6 @@ QUESTION_TOPICS = {
             "correct": 0
         },
         {
-            "question": "Kdy se v České republice naposledy konala Heart of Europe Bio-Crystallography Meetings?",
-            "options": ["2013", "2015", "2017", "2019"],
-            "correct": 1
-        },
-        {
             "question": "Kde se v ČR konala Heart of Europe Bio-Crystallography Meetings v roce 2015?",
             "options": ["Praha", "Brno", "Kutná Hora", "České Budějovice"],
             "correct": 2
@@ -411,7 +361,7 @@ QUESTION_TOPICS = {
             "correct": 1
         },
         {
-            "question": "Kde se většinou konaly konference o práškové difrakci?",
+            "question": "Kde se většinou konaly regionální konference o práškové difrakci?",
             "options": ["Bratislava", "Liptovský Mikuláš", "Košice", "Zvolen"],
             "correct": 1
         },
@@ -476,7 +426,7 @@ QUESTION_TOPICS = {
             "correct": 1
         },
         {
-            "question": "Jak dlouho byla výstava v Národním muzeu otevřena pro veřejnost?",
+            "question": "Jak dlouho byla výstava Struktura mikrosvěta v Národním muzeu otevřena pro veřejnost?",
             "options": ["Jeden měsíc", "Dva měsíce", "Tři měsíce", "Čtyři měsíce"],
             "correct": 2
         },
@@ -498,11 +448,6 @@ QUESTION_TOPICS = {
         {
             "question": "Kdo redigoval monografii vzniklou z první Size-Strain konference?",
             "options": ["J. Fiala, R. Snyder, H. J. Bunge", "R. Snyder, H. J. Bunge, J. Fiala", "H. J. Bunge, J. Fiala, R. Snyder", "Všechny varianty jsou správné"],
-            "correct": 1
-        },
-        {
-            "question": "V jakém rozmezí se obvykle pohybuje účast na Size-Strain konferencích?",
-            "options": ["50-100 lidí", "100-150 lidí", "150-200 lidí", "200-250 lidí"],
             "correct": 1
         },
         {
@@ -591,7 +536,7 @@ QUESTION_TOPICS = {
             "correct": 1
         },
         {
-            "question": "Na jakou webovou adresu lze najít aktuální informace o společnosti?",
+            "question": "Na jaké webovou adrese lze najít aktuální informace o společnosti?",
             "options": ["www.crystallography.cz", "www.xray.cz", "www.crystal.cz", "www.struct.cz"],
             "correct": 1
         },
@@ -639,11 +584,6 @@ QUESTION_TOPICS = {
             "question": "Kolik čísel Materials Structure vychází ročně?",
             "options": ["1-2", "2-4", "4-6", "6-8"],
             "correct": 1
-        },
-        {
-            "question": "Jaký je formát letošního ročníku Materials Structure podle článku?",
-            "options": ["Dvacátý první", "Dvacátý druhý", "Dvacátý třetí", "Dvacátý čtvrtý"],
-            "correct": 0
         },
         {
             "question": "Kde jsou dostupné všechny články Materials Structure ve formátu PDF?",
@@ -739,11 +679,6 @@ QUESTION_TOPICS = {
         "question": "K čemu slouží tzv. Wilsonův diagram?",
         "options": ["K určení atomového složení", "K vyhodnocení fázových problémů", "K normalizaci intenzit difrakce", "K analýze symetrie krystalu"],
         "correct": 2
-    },
-    {
-        "question": "Co je to F-centra v krystalové struktuře?",
-        "options": ["Atom vodíku", "Porucha mřížky – vakance vyplněná elektronem", "Centrum rotace", "Fluorescenční jádro"],
-        "correct": 1
     },
     {
         "question": "Jaký typ mřížky má NaCl?",
